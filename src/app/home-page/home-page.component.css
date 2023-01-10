@@ -1,0 +1,25 @@
+body {
+  font: 400 15px Lato, sans-serif;
+  line-height: 1.8;
+  color: #818181;
+}
+.jumbotron {
+  background-color: #f4511e;
+  color: #fff;
+  padding: 100px 25px;
+  font-family: Montserrat, sans-serif;
+}
+.mini-card {
+  height: 10rem;
+  width: 30rem;
+}
+.icon-info {
+  text-indent: 50px;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 20px;
+}
+.element {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}

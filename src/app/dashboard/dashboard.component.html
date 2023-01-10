@@ -1,0 +1,61 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-5" [style]="{ width: '14rem' }">
+          <br />
+          <p-card
+            class="card"
+            [style]="{ width: '12rem', 'margin-bottom': '6em', height: '6rem' }"
+          >
+            <div class="p-field p-col-12 p-md-4">
+              <h5 class="p-mt-3 text-center">Template</h5>
+              <p-knob
+                class="text-center"
+                valueColor="#f4511e"
+                [(ngModel)]="data1"
+                valueTemplate="{value}%"
+              ></p-knob>
+            </div>
+          </p-card>
+        </div>
+        <!--Template for knob-->
+        <div class="col-md-1"></div>
+        <div class="col-md-5" [style]="{ width: '14rem' }">
+          <br />
+          <p-card
+            class="card"
+            [style]="{ width: '12rem', 'margin-bottom': '6em', height: '6rem' }"
+          >
+            <div class="p-field p-col-12 p-md-4">
+              <h5 class="p-mt-3 text-center">Template</h5>
+              <p-knob
+                class="text-center"
+                valueColor="#f4511e"
+                [(ngModel)]="data1"
+                valueTemplate="{value}%"
+              ></p-knob>
+            </div>
+          </p-card>
+        </div>
+        <!--End of knob-->
+      </div>
+    </div>
+    <div class="col-md-6"></div>
+  </div>
+</div>
+<!-- 
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <p-chart
+        class="card"
+        type="polarArea"
+        [data]="data"
+        [options]="chartOptions"
+        [style]="{ width: '440px', height: '440px' }"
+      ></p-chart>
+    </div>
+  </div>
+</div> -->
