@@ -1,61 +1,134 @@
+<br />
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-6">
       <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-5" [style]="{ width: '14rem' }">
-          <br />
-          <p-card
-            class="card"
-            [style]="{ width: '12rem', 'margin-bottom': '6em', height: '6rem' }"
-          >
-            <div class="p-field p-col-12 p-md-4">
-              <h5 class="p-mt-3 text-center">Template</h5>
+        <div class="col-md-4">
+          <p-card class="card text-center">
+            <h5 class="text-center" valign="top" align="left">
+              Customer Request
+            </h5>
+            <hr />
+            <span> Total Customer requested to new connection.</span>
+            <p valign="bottom" align="right" class="small-knob">
+              <br />
               <p-knob
                 class="text-center"
                 valueColor="#f4511e"
                 [(ngModel)]="data1"
                 valueTemplate="{value}%"
               ></p-knob>
-            </div>
-          </p-card>
+            </p> </p-card
+          ><br />
         </div>
-        <!--Template for knob-->
-        <div class="col-md-1"></div>
-        <div class="col-md-5" [style]="{ width: '14rem' }">
-          <br />
-          <p-card
-            class="card"
-            [style]="{ width: '12rem', 'margin-bottom': '6em', height: '6rem' }"
-          >
-            <div class="p-field p-col-12 p-md-4">
-              <h5 class="p-mt-3 text-center">Template</h5>
+        <div class="col-md-4">
+          <p-card class="card text-center">
+            <h5 class="text-center" valign="top" align="left">
+              Order Progress Count
+            </h5>
+            <hr />
+            Total items progressed to delivery partner.
+            <p valign="bottom" align="right" class="small-knob">
+              <br />
               <p-knob
                 class="text-center"
                 valueColor="#f4511e"
                 [(ngModel)]="data1"
                 valueTemplate="{value}%"
               ></p-knob>
-            </div>
-          </p-card>
+            </p> </p-card
+          ><br />
         </div>
-        <!--End of knob-->
+        <div class="col-md-4">
+          <p-card class="card text-center">
+            <h5 class="text-center" valign="top" align="left">
+              Employee Count
+            </h5>
+            <hr />
+            Employee includes both admin and delivery
+            <p valign="bottom" align="right" class="small-knob">
+              <br />
+              <p-knob
+                class="text-center"
+                valueColor="#f4511e"
+                [(ngModel)]="data1"
+                valueTemplate="{value}%"
+              ></p-knob>
+            </p> </p-card
+          ><br />
+        </div>
+      </div>
+      <!-- row end -->
+      <div class="row">
+        <p-card>
+          <div class="row">
+            <div class="col-md-8">
+              <Marquee class="card">
+                <h4>
+                  Download Data Sheet for customer, Order and Delivery.<br />
+                </h4>
+              </Marquee>
+            </div>
+            <div class="col-md-4">
+              <button class="btn btn-primary" style="width:100%;">Find</button>
+            </div>
+          </div>
+        </p-card>
+        &nbsp;
       </div>
     </div>
-    <div class="col-md-6"></div>
-  </div>
-</div>
-<!-- 
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <p-chart
-        class="card"
-        type="polarArea"
-        [data]="data"
-        [options]="chartOptions"
-        [style]="{ width: '440px', height: '440px' }"
-      ></p-chart>
+    <div class="col-md-6">
+      <p-card class="card" [style]="{ width: '99%', height: '93%' }">
+        <h5 valign="top" align="left">
+          Rotational Product Manufacturing and Refilling (RPMR)
+        </h5>
+        <hr />
+        <p valign="bottom" align="right"></p>
+        <div class="small-knob">
+          <!-- <apx-chart
+          [series]="chartOptions.series"
+          [chart]="chartOptions.chart"
+          [plotOptions]="chartOptions.plotOptions"
+          [labels]="chartOptions.labels"
+        ></apx-chart> -->
+        </div> </p-card
+      ><br />
+      <br />
     </div>
   </div>
-</div> -->
+  <div class="row">
+    <div class="col-md-3">
+      <p-card class="card" [style]="{ width: '99%', height: '93%' }">
+        <h5>Stock Utility</h5>
+        <hr />
+        <!-- <p-chart
+        type="doughnut"
+        [data]="stock"
+        [options]="chartOptions"
+      ></p-chart> -->
+      </p-card>
+    </div>
+    <div class="col-md-3">
+      <p-card class="card" [style]="{ width: '99%', height: '93%' }">
+        <h5>Sales Data</h5>
+        <hr />
+        <!-- <p-chart
+        type="polarArea"
+        [data]="sales"
+        [options]="chartOptions"
+      ></p-chart> -->
+      </p-card>
+    </div>
+    <div class="col-md-6">
+      <p-card class="card" [style]="{ width: '99%', height: '93%' }">
+        <h5>Product Recycle</h5>
+        <hr />
+        <!-- <p-chart
+        type="line"
+        [data]="basicData"
+        [options]="basicOptions"
+      ></p-chart> -->
+      </p-card>
+    </div>
+  </div>
+</div>
