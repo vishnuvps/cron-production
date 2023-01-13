@@ -17,6 +17,7 @@ import { ToastModule } from 'primeng/toast';
 import { OrganizationChartModule } from 'primeng/organizationchart';
 import { PanelModule } from 'primeng/panel';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TableModule } from 'primeng/table';
 @NgModule({
   imports: [
     BrowserModule,
@@ -27,6 +28,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     KnobModule,
     CardModule,
     ChartModule,
+    TableModule,
     ToastModule,
     PanelModule,
     OrganizationChartModule,
