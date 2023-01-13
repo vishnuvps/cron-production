@@ -14,6 +14,9 @@ import { KnobModule } from 'primeng/knob';
 import { CardModule } from 'primeng/card';
 import { ChartModule } from 'primeng/chart';
 import { ToastModule } from 'primeng/toast';
+import { OrganizationChartModule } from 'primeng/organizationchart';
+import { PanelModule } from 'primeng/panel';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   imports: [
     BrowserModule,
@@ -25,6 +28,9 @@ import { ToastModule } from 'primeng/toast';
     CardModule,
     ChartModule,
     ToastModule,
+    PanelModule,
+    OrganizationChartModule,
+    BrowserAnimationsModule,
   ],
   declarations: [
     AppComponent,

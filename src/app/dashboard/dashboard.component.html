@@ -83,15 +83,36 @@
           Rotational Product Manufacturing and Refilling (RPMR)
         </h5>
         <hr />
-        <p valign="bottom" align="right"></p>
-        <div class="small-knob">
-          <!-- <apx-chart
+        <p-toast [style]="{ marginTop: '80px' }"></p-toast>
+        <!-- <p-organizationChart
+          [value]="orgChart"
+          selectionMode="single"
+          [(selection)]="selectedNode"
+          (onNodeSelect)="onNodeSelect($event)"
+          styleClass="company"
+        >
+          <ng-template let-node pTemplate="person">
+            <div class="node-header">{{ node.label }}</div>
+            <div class="node-content">
+              <div>{{ node.data.name }}</div>
+            </div>
+          </ng-template>
+          <ng-template let-node pTemplate="department">
+            {{ node.label }}
+          </ng-template>
+        </p-organizationChart> -->
+
+        <h5>Basic</h5>
+        <p>Hierarchical data with zero configuration.</p>
+        <p-organizationChart [value]="orgChart"></p-organizationChart>
+        <!-- <div class="small-knob">
+          <apx-chart
           [series]="chartOptions.series"
           [chart]="chartOptions.chart"
           [plotOptions]="chartOptions.plotOptions"
           [labels]="chartOptions.labels"
-        ></apx-chart> -->
-        </div> </p-card
+        ></apx-chart>
+        </div> --> </p-card
       ><br />
       <br />
     </div>
